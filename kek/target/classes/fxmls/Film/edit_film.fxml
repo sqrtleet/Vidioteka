@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pages.Film.EditFilm">
+   <children>
+      <Label layoutX="58.0" layoutY="118.0" text="Дата релиза">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="255.0" text="Возрастной рейтинг">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBtn" layoutX="76.0" layoutY="464.0" mnemonicParsing="false" text="Изменить фильм" />
+      <Button fx:id="cancelBtn" layoutX="102.0" layoutY="503.0" mnemonicParsing="false" text="Отмена" />
+      <DatePicker fx:id="dateColumn" layoutX="57.0" layoutY="147.0" />
+      <ComboBox fx:id="ageColumn" layoutX="57.0" layoutY="283.0" prefWidth="150.0" />
+      <Label layoutX="29.0" layoutY="14.0" text="Редактирование фильма">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="50.0" text="Имя фильма">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameColumn" layoutX="57.0" layoutY="77.0" promptText="Warcraft">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="countryColumn" layoutX="57.0" layoutY="215.0" promptText="Russia">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="58.0" layoutY="184.0" text="Страна">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="producerColumn" layoutX="57.0" layoutY="354.0" prefWidth="150.0" />
+      <Label layoutX="58.0" layoutY="327.0" text="Продюсер">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="genreColumn" layoutX="57.0" layoutY="421.0" prefWidth="150.0" />
+      <Label layoutX="58.0" layoutY="394.0" text="Жанр">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

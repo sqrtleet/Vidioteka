@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pages.MainMenu.MainMenu">
+   <children>
+      <Label fx:id="employeeName" layoutX="14.0" layoutY="41.0" text="Работник: ">
+         <font>
+            <Font name="Segoe UI" size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="103.0" prefHeight="775.0" prefWidth="1200.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Button fx:id="orderBtn" layoutX="74.0" layoutY="371.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр заказов" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="filmBtn" layoutX="491.0" layoutY="115.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр фильмов" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientBtn" layoutX="74.0" layoutY="115.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр клиентов" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="cdBtn" layoutX="901.0" layoutY="115.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр дисков" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="genreBtn" layoutX="491.0" layoutY="371.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр жанров" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="producerBtn" layoutX="901.0" layoutY="371.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр режиссеров" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="employeeBtn" layoutX="491.0" layoutY="599.0" mnemonicParsing="false" opacity="0.8" prefHeight="140.0" prefWidth="226.0" style="-fx-background-color: #abffac;" text="Просмотр работников" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

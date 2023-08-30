@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pages.Client.AddClient">
+   <children>
+      <TextField fx:id="nameField" layoutX="61.0" layoutY="87.0" promptText="Иванов Иван Иванович" />
+      <TextField fx:id="blField" layoutX="61.0" layoutY="218.0" promptText="true or false" />
+      <TextField fx:id="phoneField" layoutX="61.0" layoutY="151.0" promptText="89999999999" />
+      <Label layoutX="49.0" layoutY="14.0" text="Добавление клиента">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="62.0" text="ФИО">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="124.0" text="Номер телефона">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="191.0" text="Черный список">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="257.0" text="Дата рождения">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dobField" layoutX="62.0" layoutY="286.0" />
+      <Button fx:id="addBtn" layoutX="80.0" layoutY="324.0" mnemonicParsing="false" text="Добавить клиента" />
+      <Button fx:id="cancelBtn" layoutX="109.0" layoutY="361.0" mnemonicParsing="false" text="Отмена" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pages.Client.ClientMenu">
+   <children>
+      <AnchorPane layoutY="103.0" prefHeight="775.0" prefWidth="1200.0" style="-fx-background-color: lightgray;">
+         <children>
+            <TableView fx:id="tableView" layoutY="1.0" prefHeight="775.0" prefWidth="536.0">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="55.0" text="ID" />
+                  <TableColumn fx:id="nameColumn" prefWidth="168.0" text="Name" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="127.0" text="Phone" />
+                  <TableColumn fx:id="blacklistColumn" prefWidth="83.0" text="Blacklist" />
+                  <TableColumn fx:id="dobColumn" prefWidth="98.0" text="DOB" />
+               </columns>
+            </TableView>
+            <Button fx:id="addButton" layoutX="562.0" layoutY="75.0" mnemonicParsing="false" text="Добавить">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="editButton" layoutX="562.0" layoutY="149.0" mnemonicParsing="false" text="Редактировать">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" layoutX="562.0" layoutY="224.0" mnemonicParsing="false" text="Удалить">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchField" layoutX="562.0" layoutY="1.0" promptText="Поиск клиента">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="refreshButton" layoutX="562.0" layoutY="299.0" mnemonicParsing="false" text="Обновить таблицу">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="excelBtn" layoutX="562.0" layoutY="377.0" mnemonicParsing="false" text="Сформировать отчет">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backBtn" layoutX="1083.0" layoutY="32.0" mnemonicParsing="false" text="Назад">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="employeeName" layoutX="24.0" layoutY="51.0" text="Работник: ">
+         <font>
+            <Font name="Segoe UI" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
